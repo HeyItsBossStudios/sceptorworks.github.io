@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Become A Creator</title>
+<link rel="icon" href = "icon.png"/>
+</head>
+
+<body background = "background.jpg">
+<div id="head">
+<center>
+<b><font size = "15">Join our group</font></b>
+</center>
+<a href = "index.htm" class = "button">Home</a>
+<a href = "About.html" class = "button">About us</a>
+<a href = "Work.html" class = "button">Our Work</a>
+<a href = "creators.html" class = "button">Our Creators</a>
+</div>
+<div id ="body">
+<br>
+<br>
+<center>
+<h2>Sign Up</h2>
+<form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+<input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="sceptorworkscontact@gmail.com" />
+<input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="RQQ6NZKHYGQH" />
+<input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="index.html" />
+<input id="skip_Subject" name="skip_Subject" type="hidden" value="Sign Up Web Form" />
+<input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
+<input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.FirstName.value == "") {alert('First Name is required.');frm.FirstName.focus();return false;}
+if (frm.Organization.value == "") {alert('Organization is required.');frm.Organization.focus();return false;}
+if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+if (frm.StreetAddress1.value == "") {alert('Address is required.');frm.StreetAddress1.focus();return false;}
+if (frm.City.value == "") {alert('City is required.');frm.City.focus();return false;}
+if (frm.Country.value == "") {alert('Country is required.');frm.Country.focus();return false;}
+if (frm.skip_CaptchaCode.value == "") {alert('Enter web form code.');frm.skip_CaptchaCode.focus();return false;}
+return true; }
+function ReloadCaptchaImage(captchaImageId) {
+var obj = document.getElementById(captchaImageId);
+var src = '' + obj.src;
+obj.src = '';
+var date = new Date();
+var pos = src.indexOf('&rad=');
+if (pos >= 0) { src = src.substr(0, pos); }
+obj.src = src + '&rad=' + date.getTime();
+return false; }
+</script>
+<table border="0" cellpadding="5" cellspacing="0" width="600">
+<tr>
+<td><b style="color:white">Username:</b></td>
+<td>
+<input id="FirstName" name="FirstName" type="text" maxlength="60" style="width:146px; border:1px solid #999999" />
+</td>
+</tr><tr>
+</tr><tr>
+<td><b style="color: white">Email address:</b></td>
+<td><input id="FromEmailAddress" name="FromEmailAddress" type="text" maxlength="60" style="width:300px; border:1px solid #999999" /></td>
+</tr><tr>
+</tr><tr>
+<td colspan="2" align="center">
+<br />
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2" style="padding-bottom:18px;">
+<tr valign="top">
+<td>
+<b style="color: white"><i>Enter web form code:</i></b>
+<input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text" style="width:80px; border:1px solid #999999" maxlength="6" />
+</td><td>
+<a href="http://www.snaphost.com/captcha/"><img id="CaptchaImage" alt="add captcha to form" title="add captcha to form"
+style="margin-left:20px; border:1px solid #999999"
+src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=RQQ6NZKHYGQH&ImgType=2" /></a>
+<br /><a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;" style="color: white">reload image</span></a>
+<br>
+<input id="skip_Submit" name="skip_Submit" type="submit" value="Submit" />
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+</table>
+<br />
+</form>
+</center>
+</div>
+
+<style>
+#head{
+color:white;
+width: 100%;
+height: 120;
+left:0;
+background-image: url('header.jpg');
+}
+
+#body{
+color: white;
+}
+.button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+</style>
+
+<script>
+
+</script>
+</html>
